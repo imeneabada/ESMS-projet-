@@ -7,6 +7,7 @@ body{
     background-color: #112433;
     font-family: "Jersey 20",sans-serif;
 }
+/* header styling */
 header{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
@@ -76,3 +77,85 @@ nav ul li a:hover{
     0 0 30px #ED6C1E;
 }
 
+
+/* hero styling */
+
+
+
+/* about styling */
+
+
+
+
+/* agenda styling */
+
+
+
+
+/* faq styling */
+
+
+#faq{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+.faq-title{
+    align-self: center;
+    font-size: 48px;
+    color: #5FBFBD;
+    padding: 0 1rem;
+    border-bottom: 3px solid #ED6C1E;
+    font-family: 'Press Start 2p',sans-serif;
+}
+.faq-container{
+    font-size: 1.7rem;
+    margin: 0 2rem;
+    background: rgba(204, 208, 207, 0.1);
+    backdrop-filter: blur(10px); 
+    border-radius: 30px;
+    padding: 45px 40px;
+    border: 1px solid #5FBFBD;
+}
+.qstn{
+    border-bottom: 1.5px solid #ED6C1E;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qst{
+    padding: 1rem 0;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 18px;
+}
+.answer.active {
+    max-height: 500px; 
+}
+
+.reveal{
+    border: 3px solid #5FBFBD;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+}
+.reveal img {
+    transition: transform 0.3s ease;
+}
+
+.reveal img.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* sponsors styling */
+
+/* Contact Us styling */
