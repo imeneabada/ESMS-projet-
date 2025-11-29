@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #112433;
+    font-family: "Jersey 20",sans-serif;
+}
+header{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav img{
+    height: 58px;
+    width: 105;
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-shadow:
+    2px 2px 0 black,    
+    -2px 2px 0 black,   
+    2px -2px 0 black,   
+    -2px -2px 0 black; 
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #ED6C1E;
+    text-underline-offset: 0.5rem;
+
+    text-shadow:
+    2px 2px 0 black,
+    -2px 2px 0 black,
+    2px -2px 0 black,
+    -2px -2px 0 black,
+    0 0 5px white,     
+    0 0 10px white; 
+}
+
+.registerbtn{
+    background-color: #ED6C1E;
+    box-shadow: 
+        0 0 5px #ED6C1E,   
+        0 0 10px #ED6C1E,  
+        0 0 15px #ED6C1E;  
+    transition: box-shadow 0.2s;
+    border: 0.5px solid #CCD0CF;
+    padding: 0.5rem 0.7rem;
+    border-radius: 15px;
+    color: white;
+    text-shadow:
+    2px 2px 0 black,   
+    -2px 2px 0 black;
+}
+.registerbtn:hover{
+    box-shadow: 
+    0 0 10px #ED6C1E,
+    0 0 20px #ED6C1E,
+    0 0 30px #ED6C1E;
+}
+h1 {
+    color: #5fbfbd; 
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 2.3rem;
+    
+    justify-content: space-between;
+    letter-spacing: 4px; 
+    margin-bottom:20px;
+    line-height: 1.5;
+    padding-top: 2.5rem;
+    padding-left: 72px;
+
+    white-space: pre-line;
+    text-shadow:
+     0 0 10px #11ED93; 
+}
+.hero-description{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-left: 72px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    
+}
+.hero-content{
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    gap:20rem;
+    height: 40rem;
+   
+
+}
+
+.logo{
+    margin-top: 7rem;
+    width: 26rem;
+    margin-right: 2rem;
+   
+}
+.ligne {
+  font-size: 20px;
+  color: #5fbfbd;
+  margin-left: 4.9rem;
+  justify-content:space-between;
+  line-height: 2.5;
+  
+}
+
+.register-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #ED6C1E; /* Orange */
+  padding: 15px 35px;
+  border-radius: 20px;
+
+  font-family: 'jersey 20', sans-serif; /* style futuriste */
+  font-size: 25px;
+  font-weight: 700;
+  height: 3.7rem;
+  width: 16rem;
+  color: white;
+ text-shadow: 
+    -2px 0 0 black,
+     2px 0 0 black,
+     0 -2px 0 black,
+     0  2px 0 black;
+
+  text-decoration: none;
+  margin-top: 2.5rem;
+  margin-left: 11rem;
+  box-shadow: 0 0 25px #ED6C1E; /* Glow orange */
+  transition: 0.3s;
+}
+
+/* Effet quand la souris passe */
+.register-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #ED6C1E;
+}
+
+/* Style de l’icône flèche */
+.register-btn .icon {
+  font-size: 1.5rem;
+  border: 0.5px ;
+  padding: 3px;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: 1;
+}
+.icon{
+    width:2rem;
+    fill:white;
+
+}
