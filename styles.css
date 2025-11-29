@@ -178,18 +178,7 @@ h1 {
 
 }
 =======
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #112433;
-    font-family: "Jersey 20",sans-serif;
-}
-header{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-}
+   
 a{
     text-decoration: none;
 }
