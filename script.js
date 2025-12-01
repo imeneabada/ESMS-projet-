@@ -47,22 +47,22 @@ faqItems.forEach(item => {
 const line = document.querySelector('.line1');
 const items = Array.from(line.children);
 
-// Duplicate items for seamless scroll
+
 items.forEach(item => {
   line.appendChild(item.cloneNode(true));
 });
 
 let scrollPos = 0;
-const speed = 1; // px per frame, adjust for speed
+const speed = 1; 
 
 function animate() {
   scrollPos += speed;
   if (scrollPos >= line.scrollWidth / 2) {
-    scrollPos = 0; // reset to start when one set has scrolled
+    scrollPos = 0; 
   }
   line.style.transform = `translateX(-${scrollPos}px)`;
   requestAnimationFrame(animate);
 }
 
-// Start animation
+
 animate();

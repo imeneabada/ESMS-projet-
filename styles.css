@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #112433;
@@ -11,6 +12,12 @@ body{
 /* header styling */
 header{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #112433;
 }
 a{
     text-decoration: none;
@@ -80,7 +87,111 @@ nav ul li a:hover{
 
 
 /* hero styling */
+#hero{
+    padding-top: 94px;
+    scroll-margin-top: 100px;
+}
+.hero-content h1{
+    color: #5fbfbd; 
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 2.3rem;
+    
+    justify-content: space-between;
+    letter-spacing: 4px; 
+    margin-bottom:20px;
+    line-height: 1.5;
+    padding-top: 2.5rem;
+    padding-left: 72px;
 
+    white-space: pre-line;
+    text-shadow:
+     0 0 10px #11ED93; 
+}
+.hero-description{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-left: 72px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    
+}
+.hero-content{
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    gap:20rem;
+    height: 40rem;
+   
+
+}
+
+.logo{
+    margin-top: 7rem;
+    width: 26rem;
+    margin-right: 2rem;
+   
+}
+.ligne {
+  font-size: 20px;
+  color: #5fbfbd;
+  margin-left: 4.9rem;
+  justify-content:space-between;
+  line-height: 2.5;
+  
+}
+
+.register-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #ED6C1E; /* Orange */
+  padding: 15px 35px;
+  border-radius: 20px;
+
+  font-family: 'jersey 20', sans-serif; /* style futuriste */
+  font-size: 25px;
+  font-weight: 700;
+  height: 3.7rem;
+  width: 16rem;
+  color: white;
+ text-shadow: 
+    -2px 0 0 black,
+     2px 0 0 black,
+     0 -2px 0 black,
+     0  2px 0 black;
+
+  text-decoration: none;
+  margin-top: 2.5rem;
+  margin-left: 11rem;
+  box-shadow: 0 0 25px #ED6C1E; /* Glow orange */
+  transition: 0.3s;
+}
+
+/* Effet quand la souris passe */
+.register-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #ED6C1E;
+}
+
+/* Style de l’icône flèche */
+.register-btn .icon {
+  font-size: 1.5rem;
+  border: 0.5px ;
+  padding: 3px;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: 1;
+}
+.icon{
+    width:2rem;
+    fill:white;
+
+}
 
 
 /* about styling */
@@ -102,6 +213,7 @@ nav ul li a:hover{
     color: white;
     gap: 4rem;
     padding: 2rem 0;
+    scroll-margin-top: 100px;
 }
 .faq-title, .titlee{
     align-self: center;
@@ -167,6 +279,7 @@ nav ul li a:hover{
     flex-direction: column;
     gap: 4rem;
     padding: 2rem 0;
+    scroll-margin-top: 100px;
 }
 .sponsor-container{
     display: flex;
@@ -207,6 +320,9 @@ nav ul li a:hover{
     width: 200px;
 }
 /* Contact Us styling */
+#contact{
+    scroll-margin-top: 100px;
+}
 .section-title {
   color:#5FBFBD; 
   font-family: "Press Start 2P", system-ui;
