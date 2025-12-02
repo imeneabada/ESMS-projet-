@@ -89,7 +89,7 @@ nav ul li a:hover{
 /* hero styling */
 #hero{
     padding-top: 94px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 94px;
 }
 .hero-content h1{
     color: #5fbfbd; 
@@ -123,7 +123,7 @@ nav ul li a:hover{
     background-position: center;
     display: flex;
     align-items:center;
-    gap:20rem;
+    gap:15rem;
     height: 40rem;
    
 
@@ -213,7 +213,7 @@ nav ul li a:hover{
     color: white;
     gap: 4rem;
     padding: 2rem 0;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 94px;
 }
 .faq-title, .titlee{
     align-self: center;
@@ -279,7 +279,7 @@ nav ul li a:hover{
     flex-direction: column;
     gap: 4rem;
     padding: 2rem 0;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 94px;
 }
 .sponsor-container{
     display: flex;
@@ -321,7 +321,7 @@ nav ul li a:hover{
 }
 /* Contact Us styling */
 #contact{
-    scroll-margin-top: 100px;
+    scroll-margin-top: 94px;
 }
 .section-title {
   color:#5FBFBD; 
