@@ -195,11 +195,206 @@ nav ul li a:hover{
 
 
 /* about styling */
+.container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px;
+            position: relative;
+        }
 
+        .container h1 {
+            font-size: 48px;
+            color: #5fbfbd;
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 
+       
+      
+                0 0 40px #5FBFBD;
+            letter-spacing: 1px;
+            text-decoration:underline #ed6c1e;
+            font-style:unset;
+            position:absolute;
+            top: 100px;
+            left: 500px;
+            font-family: 'Press Start 2P', sans-serif;
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 50px;
+        }
+
+        .text-content {
+            padding-right: 20px;
+        }
+
+        .container h2 {
+            font-size: 40px;
+            font-family:'Jersey20-Regular', sans-serif;
+            color:#fff;
+            margin-bottom: 0px;
+            line-height: 1.4;
+            position:absolute;
+            top: 250px;
+            -webkit-text-stroke: 0.5px #000a1f;
+            font-weight:bold;
+            text-shadow:
+    2px 2px 0 black,
+    -2px 2px 0 black,
+    2px -2px 0 black,
+    -2px -2px 0 black,
+    0 0 5px white,     
+    0 0 10px white; 
+            
+        }
+
+        .container p {
+            font-size: 22px;
+            color: #FFFFFF;
+            line-height: 1.5;
+            text-align: justify;
+            margin-top: 350px;
+            font-family: 'orbitron', sans-serif;
+            font-weight: 400;
+        }
+        .carousel-container {
+         width: 400px;
+         height: 300px;
+         overflow: hidden;
+         margin: auto;
+         position: relative;
+         border-radius: 20px;
+}
+.video-container {
+  max-width: 1000px;        /* Limit width */
+  max-height: 400px;
+  margin: 20px auto;        /* Center video */
+  border-radius: 15px;      /* Rounded corners */
+  overflow: hidden;         /* So corners apply to video */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+  margin-top: 350px;
+  position: relative;
+}
+
+video {
+  width: 100%;              /* Make video responsive */
+  display: block;           /* Remove small gaps */
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;            /* Adjust size of play button */
+    cursor: pointer;
+    z-index: 2;
+}
 
 
 
 /* agenda styling */
+#agenda{
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 94px;
+}
+.agenda-title {
+    font-size: 48px;
+    font-family: 'Press Start 2p',sans-serif;
+    /* size: 40px; */
+    color: #5fbfbd;
+    margin-top: 50px;
+    text-shadow: 0 0 15px rgba(95,191,189,0.6);
+    text-decoration: underline #ed6c1e;
+    /* letter-spacing: 2px; */
+    align-self: center;
+}
+
+/* MAIN WRAPPER */
+.agenda-wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ARROW BUTTONS */
+.arrow-btn {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #5fbfbd;
+    border: 2px solid #112433;
+    color: #112433;
+    font-family: Press Start 2P;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 2px 2px 0px #112433;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.arrow-btn:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #112433;
+}
+
+/* DAY CARDS */
+.day {
+    width: 450px;
+    height: 450px;
+    padding: 25px;
+    border-radius: 40px;
+
+     background: linear-gradient(135deg, #0a1f2e 0%, #1a3d4d 50%, #2a5a5f 100%);
+     border: 1px solid #5FBFBD;
+
+    display: none;
+}
+.schedule {
+    display: flex;
+    gap: 40px; /* space between hours and activities */
+    height: 100%;
+}
+
+/* HOURS COLUMN */
+.hour {
+    margin-top: 30px;
+    font-family: Orbitron;
+    font-size: 14px;
+    color: #5FBFBD;
+    white-space: nowrap;
+}
+
+/* ACTIVITIES COLUMN */
+.activity {
+    margin-top: 30px;
+    font-family: Orbitron;
+    font-size: 14px;
+    color: white;
+}
+.day.active {
+    display: block;
+}
+
+
+
+/* DAY TITLES */
+.day h2 {
+    color: #5FBFBD;
+    text-decoration: underline #5FBFBD;
+    font-family: Orbitron;
+    margin-bottom: 25px;
+    size: 32px;
+}
 
 
 
@@ -208,6 +403,7 @@ nav ul li a:hover{
 
 
 #faq{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     color: white;
